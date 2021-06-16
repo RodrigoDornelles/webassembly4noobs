@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!-- add.html -->
+<html>
+  <head></head>
+  <body>
+    <script type="module">
+      (async() => {
+        const response = await fetch('add.wasm');
+        const bytes = await response.arrayBuffer();
+        const { instance } = await WebAssembly.instantiate(bytes, {
+            env: {
+                foo: () => console.log('bar')
+            }
+        });
+
+        console.log('The answer is: ' + instance.exports.add(1, 2));
+      })();
+    </script>
+  </body>
+</html>
