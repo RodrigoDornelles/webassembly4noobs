@@ -27,7 +27,11 @@
  <!-- ABOUT THE PROJECT -->
 
 ## Sobre o Projeto
-Provavelmente, este é o primeiro tutorial sobre web assembly em português. Mesmo já entrando em fase de adoção, existe bem pouco material mesmo em inglês. Foi necessário muita pesquisa, e até mesmo descobrir sozinho algumas coisas para entender mais sobre como funciona o web assembly em si. Neste tutorial você vai aprender tudo que é necessário sobre o webassembly! um compilado de semanas pesquisando e testando.
+Provavelmente, este é o primeiro tutorial sobre web assembly em português. Mesmo já entrando em fase de adoção, existe bem pouco material mesmo em inglês.
+
+Foi necessário muita pesquisa, e até mesmo descobrir sozinho algumas coisas para entender mais sobre como funciona o web assembly em si.
+
+Neste tutorial você vai aprender tudo que é necessário sobre o webassembly. um compilado de semanas pesquisando e testando!
 
 <!-- ROADMAP OF PROJECT -->
 
@@ -40,8 +44,8 @@ Provavelmente, este é o primeiro tutorial sobre web assembly em português. Mes
     - [Implementação](#implementacao)
         - [Integrando com JS](#integrando-com-js)
         - [Primeiro programa](#primeiro-programa)
-    - [Extendendo]
-        - [Compilação](#extendendo)
+    - [Extendendo](#extendendo)
+        - [Compilação](#compilacao)
         - [Sobre o LLVM](#sobre-o-llvm)
         - [Detalhe sobre Cors](#detalhe-sobre-cors)
         - [Importação/Exportação](#importacao-exportacao)
@@ -49,21 +53,19 @@ Provavelmente, este é o primeiro tutorial sobre web assembly em português. Mes
   - [TypeScript](#typescript)
   - [C/C++](#c-c++)
     - [Emscripten](#emscripten)
-    - [C/C++ Puro](c-c++-puro)
+    - [C/C++ Puro](#c-c++-puro)
   
   
 <!-- CONTRIBUTING -->
 
-## Como Contribuir
+## Maquina Virtual
+Assim como o javascript, WASM funciona como uma maquina virtual no software do navegador, no lado de cliente. Mas possui algumas diferenças.
 
-Contribuições fazem com que a comunidade open source seja um lugar incrível para aprender, inspirar e criar. Todas contribuições
-são **extremamente apreciadas**
+Enquanto que com o javascript possui um compilador JIT _(em tempo de execução)_, ao trabalhar em webassembly já possui o código compilado em bytecode.
 
-1. Realize um Fork do projeto
-2. Crie um branch com a nova feature (`git checkout -b feature/featureBraba`)
-3. Realize o Commit (`git commit -m 'Adicionado conteudo brabo'`)
-4. Realize o Push no Branch (`git push origin feature/featureBraba`)
-5. Abra um Pull Request
+Para tirar todo o proveito de intregrações entre javascript e webassembly, alguns conceitos de baixo nível serão importantes. Assim como funciona a própria arquitetura em si.
+
+### Conceitos
 
 ## Autores
 
