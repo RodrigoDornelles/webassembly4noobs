@@ -9,9 +9,9 @@
 <!-- Title -->
 
 <p align="center">
-  <h2 align="center">Título do seu 4noobs</h2>
+  <h2 align="center">WebAssembly para noobs</h2>
 
-  <h1 align="center"><img src="https://raw.githubusercontent.com/he4rt/4noobs/master/.github/deno.svg" alt="Imagem da linguagem" width="120"></h1>
+  <h1 align="center"><img src="wasm/logo.png" alt="WASM" width="120"></h1>
   
   <p align="center">
     <br />
@@ -27,22 +27,29 @@
  <!-- ABOUT THE PROJECT -->
 
 ## Sobre o Projeto
-Explique um pouco sobre o 4noobs que está desenvolvendo.
+Provavelmente, este é o primeiro tutorial sobre web assembly em português. Mesmo já entrando em fase de adoção, existe bem pouco material mesmo em inglês. Foi necessário muita pesquisa, e até mesmo descobrir sozinho algumas coisas para entender mais sobre como funciona o web assembly em si. Neste tutorial você vai aprender tudo que é necessário sobre o webassembly! um compilado de semanas pesquisando e testando.
 
 <!-- ROADMAP OF PROJECT -->
 
 ## ROADMAP
 
-- [Conteúdo 1](link-primeira-parte)
-- [Conteúdo 2](link-segunda-parte)
-- [Conteúdo 3](link-terceira-parte)
-  - [Sub-conteúdo](link-sub-conteudo)
-  	- [Sub-conteúdo](link-sub-conteudo)
-  - [Sub-conteúdo](link-sub-conteudo)
-- [Conteúdo 4](link-quarta-parte)
-- [Conteúdo 5](link-quinta-parte)
-  - [Sub-conteúdo](link-sub-conteudo)
-  - [Sub-conteúdo](link-sub-conteudo)
+- [Maquina Virtual](#maquina-virtual)
+    - [Conceitos](#conceitos)
+        - [Memória principal](#memoria-principal)
+        - [Memória auxiliar](#memoria-auxiliar)
+    - [Implementação](#implementacao)
+        - [Integrando com JS](#integrando-com-js)
+        - [Primeiro programa](#primeiro-programa)
+    - [Extendendo]
+        - [Compilação](#extendendo)
+        - [Sobre o LLVM](#sobre-o-llvm)
+        - [Detalhe sobre Cors](#detalhe-sobre-cors)
+        - [Importação/Exportação](#importacao-exportacao)
+- [Outras Linguagens](#outras-linguagens)
+  - [TypeScript](#typescript)
+  - [C/C++](#c-c++)
+    - [Emscripten](#emscripten)
+    - [C/C++ Puro](c-c++-puro)
   
   
 <!-- CONTRIBUTING -->
@@ -60,7 +67,7 @@ são **extremamente apreciadas**
 
 ## Autores
 
-- **Nome Completo** - _Especialidade_ - [@nickname](seutwitter)
+- **Rodrigo Dornelles** - _Entusiasta_
 
 ---
 
